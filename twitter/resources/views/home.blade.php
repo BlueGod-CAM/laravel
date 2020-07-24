@@ -1,0 +1,10 @@
+@extends("layouts.main")
+@section("header")
+    @include("layouts.public_post")
+@endsection()
+`
+@section("content")
+    @foreach($posts as $post)
+        @include("layouts.post")
+    @endforeach()
+@endsection()
